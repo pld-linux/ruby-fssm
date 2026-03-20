@@ -6,7 +6,7 @@
 Summary:	File system state monitor
 Name:		ruby-%{pkgname}
 Version:	0.2.10
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/gems/%{pkgname}-%{version}.gem
