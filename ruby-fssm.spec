@@ -6,11 +6,12 @@
 Summary:	File system state monitor
 Name:		ruby-%{pkgname}
 Version:	0.2.10
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/gems/%{pkgname}-%{version}.gem
 # Source0-md5:	84c339af7eec2b408c757be5912579a8
+Patch0:		ruby-fssm-ruby32.patch
 URL:		http://github.com/ttilley/fssm
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
@@ -36,6 +37,7 @@ Documentation for %{name}
 
 %prep
 %setup -q -n %{pkgname}-%{version}
+%patch -P0 -p1
 
 %build
 # write .gemspec
